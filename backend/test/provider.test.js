@@ -1,0 +1,2 @@
+import test from 'node:test'; import assert from 'node:assert/strict'; import {toneInstruction} from '../src/provider.js';
+test('tone instructions are distinct and default safely',()=>{assert.match(toneInstruction('professional'),/professionally/);assert.match(toneInstruction('casual'),/friendly/);assert.match(toneInstruction('concise'),/briefly/);assert.equal(toneInstruction('unknown'),toneInstruction('professional'));});

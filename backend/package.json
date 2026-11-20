@@ -1,0 +1,4 @@
+{
+  "name":"ai-chat-backend","type":"module","scripts":{"dev":"node --watch src/server.js","start":"node src/server.js","test":"node --test"},
+  "dependencies":{"@anthropic-ai/sdk":"^0.39.2","cors":"^2.8.5","dotenv":"^16.4.7","express":"^4.21.2","mongodb":"^6.12.0","openai":"^4.77.3","zod":"^3.24.1"}
+}
